@@ -1,0 +1,271 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Poppins' ,sans-serif;
+  text-decoration: none;
+}
+
+#back-to-homepage {
+    position: absolute;
+    top: 15px;
+    left: 20px;
+    font-size: 30px;
+    color: #4375ff;
+    transition: transform .2s ease;
+}
+
+#back-to-homepage:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+.side-img, .form-container {
+    flex-basis: 50%;
+}
+
+.side-img img {
+    width: 100%;
+}
+
+.form-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.title {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #4375ff;
+    text-decoration: underline;
+}
+
+.input-field {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.input-field .input-field-container.raise-error {
+    border: 2px solid #fb2d16;
+}
+
+.input-field .input-field-container.raise-error i,
+.input-field .input-field-container.raise-error input::placeholder {
+    color: #fb2d16;
+}
+
+.input-field .input-field-container.raise-error i.warning {
+    display: block;
+    color: #fb2d16;
+}
+
+.input-field .input-field-container {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: .5rem .75rem;
+    border: 2px solid #006eff;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.error-msg {
+    color: #fb2d16;
+    margin-top: .5rem;
+    font-size: 15px;
+}
+
+.input-field input {
+    border: none;
+    background: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
+    padding: 0 .75rem;
+    font-size: 1.2rem;
+    color: #34495e;
+}
+
+.input-field input::placeholder {
+    color: #006eff;
+}
+
+.input-field.submit {
+    background-color: #006eff;
+    border-radius: 20px;
+    padding: 0;
+}
+
+.input-field.submit:hover {
+    filter: brightness(120%);
+}
+
+.input-field.submit input {
+    color: #fff;
+    font-size: 1.75rem;
+    text-transform: capitalize;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.input-field i {
+    font-size: 1.3rem;
+    color: #006eff;
+    cursor: pointer;
+}
+
+.input-field i.warning {
+    display: none;
+}
+
+.forgot-password a{
+    font-size: 1.2rem;
+    color: #006eff;
+}
+
+.switch-form {
+    margin: .5rem 0;
+    font-size: 1.2rem;
+}
+
+.switch-form span {
+    color: #6a6b6b;
+}
+
+.switch-form a {
+    color: #006eff;
+    cursor: pointer;
+}
+
+.social-media {
+    width: 100%;
+    text-align: center;
+}
+
+.social-media h1 {
+    color: #006eff;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+.sm-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sm-container i {
+    font-size: 2.5rem;
+    color: #006eff;
+    transition: all .2s linear;
+}
+
+.sm-container i:nth-child(even) {
+    color: #f85e38;
+}
+
+.sm-container i:hover {
+    filter: brightness(120%);
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+@media (max-width: 769px) {
+
+    .login-form, .signup-form {
+        width: 90%;
+    }
+
+    .container{
+        justify-content: center;
+    }
+   
+    .side-img {
+        display: none;
+    }
+
+    .form-container {
+        flex-basis: 100%;
+    }
+
+    .input-field, .social-media {
+        width: 80%;
+    }
+}
+
+@media (max-width: 414px) {
+    .error-msg {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 375px) {
+
+    .input-field, .social-media {
+        width: 100%;
+    }
+
+    .form-container {
+        margin-top: 4rem;
+        flex-basis: 90%;
+    }
+
+    .register {
+        font-size: 1rem;
+    }
+
+    .switch-form {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .social-media h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .error-msg {
+        font-size: 12px;
+    }
+
+    .input-field input {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 280px) {
+    .input-field input {
+        font-size: .9rem;
+    }
+
+    .switch-form {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+}

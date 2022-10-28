@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Nguyễn Dương Minh Huy & Nguyễn Trung Tín & Võ Thị Thanh Ngân & Trần Minh Đạt& Trịnh Thị Thùy Trang">
+    <meta name="description" content="A Website that give you the best & latest high-end gaming laptop with lovely prices">
+    <meta name="keywords" content="Gaming Laptop, laptop cheep, low prices laptop, high end devices, asus, rog, acer, msi">
+    <link rel="stylesheet" href="../css/myCart.css" />
+    <link rel="icon" href="../img/page-icon/shopping-cart.png" />
+    <link rel="stylesheet" href="../libs/fontawesome-free-6.1.1-web/css/all.css">
+    <script src="../libs/css/bootstrap.min.css"></script>
+    <script src="../libs/js/jquery-3.6.0.min.js"></script>
+    <script src="../libs/js/bootstrap.min.js"></script>
+    <script src="../js/product-list.js"></script>
+    <title> My Cart</title>
+</head>
+
+<body>
+
+    <div class="display-error">
+        <div class="message">
+            <p id="error"></p>
+            <button id="btn-close-err">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </div>
+
+    <div class="confirm-payment">
+        <div class="cofirm-form">
+            <div class="title">
+                <i class="fas fa-credit-card"></i>
+                <span>Credit Card</span>
+            </div>
+            <button class="btn-purchase btn-close">
+                <i class="fas fa-times"></i>
+            </button>
+
+            <div class="input-field">
+                <i class="fas fa-phone"></i>
+                <input id="phoneNumber" type="text" placeholder="Phone number">
+            </div>
+
+            <div class="input-field">
+                <i class="far fa-credit-card"></i>
+                <input id="bankAccount" type="text" autocomplete="off" placeholder="Bank Account Number">
+            </div>
+
+            <button class="btn-purchase btn-confirm">Cofirm Purchase</button>
+        </div>
+    </div>
+
+    <div class="thank-purchase">
+        <div class="thank-purhcase__container">
+            <img src="../img/background/ship.jfif" alt="">
+            <div class="purchase-desc">
+                <p>thank you for your purchase!</p>
+                <p>you're the heart of our business!</p>
+            </div>
+            <button class="btn-continue">Continue Shopping!</button>
+        </div>
+    </div>
+
+    <div class="landing-page">
+        <header id="top">
+            <nav class="nav-bar">
+                <a href="./home.html" class="logo">G15</a>
+
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#" id="my-account">
+                            <div class="profile">
+                                <i class="fas fa-user-circle"></i>
+                                <span id="username"></span>
+                            </div>
+
+                            <div class="no-account">
+                                <i class="fas fa-user"></i> Account
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./product.html"><i class="fas fa-laptop"></i> Products</a>
+                    </li>
+
+                    <li class="nav-link my-cart no-items" id="my-cart">
+                        <a href="#" id="cart-amount-container"><i class="fas fa-shopping-cart"></i> My Cart
+                  <span id="cart-amount">0</span></a>
+
+                        <div class="mycart-item__container">
+                            <ul id="mycart-item">
+                                <a href="./myCart.html" id="my-cart-view">View Cart</a>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./warranty.html"><i class="fas fa-hammer"></i>Warranty Policy</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./sitemap.html"><i class="fas fa-atlas"></i>SiteMap</a>
+                    </li>
+
+                    <li class="nav-link sign-out">
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> log out</a>
+                    </li>
+
+
+                </ul>
+
+                <div class="menu-toggler">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <div class="wrapper">
+        <div class="cart-items-container">
+            <div class="cart-header">
+                <div class="cart-header__product">Product</div>
+                <div class="cart-header__unit-price">Unit Price</div>
+                <div class="cart-header__quantity">Quantity</div>
+                <div class="cart-header__delete">Action</div>
+            </div>
+        </div>
+
+        <div class="cart-to-charge">
+            <div class="to-charge__total">
+                Total Price: <span id="price">$ 0</span>
+            </div>
+            <div class="to-charge__pay">
+                <button class="btn-pay">Buy</button>
+            </div>
+        </div>
+    </div>
+
+    <section class="sponsor">
+        <img src="../img/Sponsor/acer.png" alt="">
+        <img src="../img/Sponsor/msi.png" alt="">
+        <img src="../img/Sponsor/asus.png" alt="">
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-detail">
+                <div class="page-intro">
+                    <a href="./home.html" class="page-logo">G15</a>
+                    <p>
+                        Come to G15, where you can get all devices with latest technology but with a really really 'lovely' price! We guarantee that we will and always satisfy you!
+                    </p>
+                </div>
+
+                <div class="page-address">
+                    <p>Contact us</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt">
+                                    12 Nguyen Van Bao, Go Vap, HCM City</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-door-open"> 08:00am - 11:59pm</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"> 1800-1234</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-envelope"> g15@gmail.com</i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="page-sm">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <hr />
+                <a href="./member.html" target="_blank">
+                    &copy;2022 All right reserved - <span>G15 Team</span>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../js/myCart.js"></script>
+</body>
+
+</html>

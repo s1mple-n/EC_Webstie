@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Nguyễn Dương Minh Huy & Nguyễn Trung Tín & Võ Thị Thanh Ngân & Trần Minh Đạt& Trịnh Thị Thùy Trang">
+    <meta name="description" content="A Website that give you the best & latest high-end gaming laptop with lovely prices">
+    <meta name="keywords" content="Gaming Laptop, laptop cheep, low prices laptop, high end devices, asus, rog, acer, msi">
+    <link rel="stylesheet" href="../css/home.css" />
+    <link rel="stylesheet" href="../libs/fontawesome-free-6.1.1-web/css/all.css" />
+    <link rel="icon" href="../img/page-icon/home.png" />
+    <script src="../libs/css/bootstrap.min.css"></script>
+    <script src="../libs/js/jquery-3.6.0.min.js"></script>
+    <script src="../libs/js/bootstrap.min.js"></script>
+    <title>Home</title>
+</head>
+
+<body>
+    <div class="landing-page" id="top">
+        <header>
+            <nav class="nav-bar">
+                <a href="./home.html" class="logo">G15</a>
+
+                <ul class="nav-links">
+                    <li class="nav-link">
+                        <a href="#" id="my-account">
+                            <div class="profile">
+                                <i class="fas fa-user-circle"></i>
+                                <span id="username"></span>
+                            </div>
+
+                            <div class="no-account">
+                                <i class="fas fa-user"></i> Account
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./product.html"><i class="fas fa-laptop"></i> Products</a>
+                    </li>
+
+                    <li class="nav-link my-cart no-items" id="my-cart">
+                        <a href="#" id="cart-amount-container"><i class="fas fa-shopping-cart"></i> My Cart
+              <span id="cart-amount">0</span></a>
+
+                        <div class="mycart-item__container">
+                            <ul id="mycart-item">
+                                <a href="./myCart.html" id="my-cart-view">View Cart</a>
+                            </ul>
+                        </div>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./warranty.html"><i class="fas fa-hammer"></i>Warranty Policy</a>
+                    </li>
+
+                    <li class="nav-link">
+                        <a href="./sitemap.html"><i class="fas fa-atlas"></i>SiteMap</a>
+                    </li>
+
+                    <li class="nav-link sign-out">
+                        <a href="#"><i class="fas fa-sign-out-alt"></i> Log Out</a>
+                    </li>
+
+                </ul>
+
+                <div class="menu-toggler">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </nav>
+        </header>
+
+        <div class="wrapper">
+            <section class="showcase-container">
+                <div class="desc">
+                    <h1>Welcome to our store!</h1>
+                    <p>
+                        No more lagging or crashing! Improve your programming career greatly with our latest technology devices.
+                    </p>
+                    <a href="./product.html" class="btn">Shop Now!</a>
+                </div>
+
+                <div class="showcase">
+                    <img id="showcase-img" src="../img/products/img-slider/1.png" />
+                </div>
+            </section>
+
+            <section class="img-slider">
+                <img class="slide-img" src="../img/products/img-slider/1.png" alt="#ff3e00" />
+                <img class="slide-img" src="../img/products/img-slider/2.png" alt="#766bd1" />
+                <img class="slide-img" src="../img/products/img-slider/3.png" alt="#2c6ad9" />
+                <img class="slide-img" src="../img/products/img-slider/4.png" alt="#ff6700" />
+                <img class="slide-img" src="../img/products/img-slider/5.png" alt="#e70213" />
+            </section>
+        </div>
+    </div>
+
+    <section class="products product-featured">
+        <h1 class="intro">Hot Deal</h1>
+        <div class="wrapper items">
+            <div class="item-feature featured-1">
+                <div class="slider">
+                    <img src="../img/products/featured/msi.jpg" class="slide" />
+                    <img src="../img/products/featured/asus-2.png" class="slide" />
+                    <img src="../img/products/featured/acer-2.jpg" class="slide" />
+                    <img src="../img/products/featured/msi-2.jpg" class="slide" />
+                    <img src="../img/products/featured/concept.png" class="slide" />
+                    <img src="../img/products/featured/Acer.jpg" class="slide" />
+                    <img src="../img/products/featured/asus.jpg" class="slide" />
+                </div>
+                <button class="btn-slide" id="prevSlide">
+                    <i class="fas fa-angle-left"></i>
+                 </button>
+                <button class="btn-slide" id="nextSlide">
+                     <i class="fas fa-angle-right"></i>
+                </button>
+            </div>
+
+            <div class="item-feature featured-2">
+                <img src="../img/products/featured/Acer.jpg" />
+            </div>
+
+            <div class="item-feature featured-3">
+                <img src="../img/products/featured/asus-2.png" />
+            </div>
+        </div>
+    </section>
+
+    <section class="products product-comingsoon">
+        <h1 class="intro">Blogs And News</h1>
+        <div class="wrapper comingsoon-products">
+            <a href="https://us.msi.com/Landing/ces-2022" class="img-card">
+                <div class="img-container">
+                    <img src="../img/products/new/blog1.jpg" alt="" />
+                </div>
+                <div class="product-desc">
+                    <div class="name">
+                        MSI CES 2022 Honoree Innovation Award Winning Products
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.msi.com/blog/MSI-CES-2022-Round-up-Meet-Our-PC-Hardware-Innovation-Award-Honorees" class="img-card">
+                <div class="img-container">
+                    <img src="../img/products/new/blog2.jpg" alt="" />
+                </div>
+                <div class="product-desc">
+                    <div class="name">
+                        CES 2022 Round-up: MSI’s Products Sweep Several Innovation Award Honors Once Again
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.asus.com/event/CES/" class="img-card">
+                <div class="img-container">
+                    <img src="../img/products/new/news1.jpg" alt="" />
+                </div>
+                <div class="product-desc">
+                    <div class="name">
+                        ASUS CES 2022 Event
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.acer.com/ac/en/US/content/ces-awarded-products" class="img-card">
+                <div class="img-container">
+                    <img src="../img/products/new/news2.jpg" alt="" />
+                </div>
+                <div class="product-desc">
+                    <div class="name">
+                        ACER CES 2022 awarded products
+                    </div>
+                    <div class="icon">
+                        <i class="fas fa-plus"></i>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </section>
+
+    <section class="advertise">
+        <h1 class="intro">Sponsors</h1>
+        <div class="wrapper">
+            <iframe src="https://www.youtube.com/embed/HkB6L2r5eqM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+      </iframe>
+        </div>
+    </section>
+
+    <section class="sponsor">
+        <img src="../img/Sponsor/acer.png" alt="">
+        <img src="../img/Sponsor/msi.png" alt="">
+        <img src="../img/Sponsor/asus.png" alt="">
+    </section>
+
+    <footer>
+        <div class="wrapper">
+            <div class="footer-detail">
+                <div class="page-intro">
+                    <a href="#top" class="page-logo">G15</a>
+                    <p>
+                        Come to G15, where you can get all devices with latest technology but with a really really 'lovely' price! We guarantee that we will and always satisfy you!
+                    </p>
+                </div>
+
+                <div class="page-address">
+                    <p>Contact us</p>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-map-marker-alt">
+                  12 Nguyen Van Bao, Go Vap, HCM City</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-door-open"> 08:00am - 11:59pm</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#">
+                                <i class="fas fa-phone"> 1800-1234</i>
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="./sitemap.html">
+                                <i class="fas fa-envelope"> g15@gmail.com</i>
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="page-sm">
+                        <i class="fab fa-facebook-square"></i>
+                        <i class="fab fa-twitter"></i>
+                        <i class="fab fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="copy-right">
+                <hr />
+                <a href="./member.html" target="_blank">
+          &copy;2022 All right reserved - <span>G15 Team</span>
+        </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/home.js"></script>
+</body>
+
+</html>
